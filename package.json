@@ -18,7 +18,8 @@
     "lint:css": "stylelint './**/*.ts'",
     "lint:fix": "eslint . --fix",
     "lint:eslint": "eslint .",
-    "lint": "npm run lint:eslint && npm run lint:css"
+    "lint": "npm run lint:eslint && npm run lint:css",
+    "ci": "yarn install --frozen-lockfile"
   },
   "husky": {
     "hooks": {

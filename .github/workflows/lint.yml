@@ -1,6 +1,8 @@
 name: Lint
 
-on: pull-request
+on:
+  pull-request:
+    types: [opened, synchronize]
 
 jobs:
   run-linters:

@@ -1,0 +1,46 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "es2019"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "isolatedModules": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "sourceRoot": "/",
+    "outDir": "/dist",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "Atoms": ["src/client/Components/Atoms"],
+      "Atoms/*": ["src/client/Components/Atoms/*"],
+      "Molecules": ["src/client/Components/Molecules"],
+      "Molecules/*": ["src/client/Components/Molecules/*"],
+      "Organisms": ["src/client/Components/Organisms"],
+      "Organisms/*": ["src/client/Components/Organisms/*"],
+      "Pages/*": ["src/client/Components/Pages/*"],
+      "Pages": ["src/client/Components/Pages"],
+      "Templates": ["src/client/Components/Templates"],
+      "Templates/*": ["src/client/Components/Templates/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", ".next", "dist"]
+}

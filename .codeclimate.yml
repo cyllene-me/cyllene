@@ -1,0 +1,48 @@
+version: 2
+
+checks:
+  argument-count:
+    config:
+      threshold: 4
+  complex-logic:
+    config:
+      threshold: 4
+  file-lines:
+    config:
+      threshold: 250
+  method-complexity:
+    config:
+      threshold: 5
+  method-count:
+    enabled: false
+  method-lines:
+    config:
+      threshold: 75
+  nested-control-flow:
+    config:
+      threshold: 4
+  return-statements:
+    config:
+      threshold: 4
+  similar-code:
+    config:
+      threshold: 50
+  identical-code:
+    config:
+      threshold: 45
+
+plugins:
+  fixme:
+    enabled: true
+  editorconfig:
+    enabled: true
+  nodesecurity:
+    enabled: true
+
+exclude_patterns:
+  - '**/node_modules/'
+  - '**/__tests__/'
+  - '**/*.stories.tsx'
+  - 'src/components/theme/'
+  - 'public/'
+  - 'config/'
